@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import FirstSection from './Components/MainContent/FirstSection';
+import SecondSection from './Components/MainContent/SecondSection';
+import ThirdSection from './Components/MainContent/ThirdSection';
+import SectionNine from './Components/MainContent/SectionNine';
+import SectionEight from './Components/MainContent/SectionEight';
+import SectionSeven from './Components/MainContent/SectionSeven';
+import SectionSix from './Components/MainContent/SectionSix';
+import SectionFive from './Components/MainContent/SectionFive';
+import SectionFour from './Components/MainContent/SectionFour';
+import Nav from './Components/layout/Nav';
+import Header from './Components/layout/Header';
+import Footer from './Components/layout/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav/>
+      <Header />
+
+      <FirstSection />
+      <SecondSection/>
+      <ThirdSection />
+      <SectionFour  />
+      <SectionFive/>
+      <SectionSix />
+      <SectionSeven />
+      <SectionEight />
+      <SectionNine />
+      <Footer />
     </div>
   );
 }
